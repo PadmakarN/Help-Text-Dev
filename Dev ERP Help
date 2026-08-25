@@ -50,3 +50,56 @@ green-3
 .fadeInDown::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+Updated Version of Dashbord Same Height and Auto Scroll vartical horizantal 
+<style>
+::-webkit-scrollbar {
+    width: 3px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.35);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,.55);
+}
+/* Only Normal Dashboard Cards */
+
+.dashboard-card{
+ height:200px !important;
+ overflow:auto !important;
+}
+#DEVDB .col-sm-3 .widget{
+    height:180px !important;
+    overflow:hidden !important;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Normal Card Content */
+#DEVDB .col-sm-3 .widget-content{
+    height:200px !important;
+    overflow:auto !important;
+}
+
+/* Normal Card Title */
+#DEVDB .col-sm-3 .maindata{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/* Normal Card Footer */
+#DEVDB .col-sm-3 .widget-footer{
+    height:50px;
+    overflow:hidden;
+    white-space:nowrap;
+    /*text-overflow:ellipsis;*/
+}
+</style>

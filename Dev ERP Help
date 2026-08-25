@@ -29,7 +29,7 @@ green-3
 
 //DashBord Same Size Css Class
 .fadeInDown{
-  height: 150px !important;
+  height: 130px !important;
   overflow-x: auto !important;
   
 }
@@ -37,4 +37,16 @@ green-3
   margin-top: auto !important;
   margin-bottom: 0 !important;
   height: 40px !important;
+}
+.fadeInDown::-webkit-scrollbar {
+  width: 2px;
+}
+
+.fadeInDown::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.fadeInDown::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }

@@ -38,9 +38,12 @@ green-3
   margin-bottom: 0 !important;
   height: 40px !important;
 }
+//for chrome
 .fadeInDown::-webkit-scrollbar {
   width: 2px;
 }
+//for firefox
+https://kosolpayroll.deverp.net/main.html#
 
 .fadeInDown::-webkit-scrollbar-thumb {
   background: #888;

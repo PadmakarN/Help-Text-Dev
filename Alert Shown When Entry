@@ -1,0 +1,10 @@
+Alert Shown When Entry
+IF EXISTS (
+    SELECT 1 
+    FROM EMPLOYEEMASTER 
+    WHERE EMPCode = @EMPCode
+)
+BEGIN
+    RAISERROR ('EMPCode already exists', 16, 1);
+    RETURN;
+END

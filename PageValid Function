@@ -1,0 +1,34 @@
+ function pageValid() {
+    let e = '';
+
+    const indate = $('.indate').val();
+    const outdate = $('.outdate').val();
+    const cindate = $('.cindate').val();
+    const coutdate = $('.coutdate').val();
+
+    function isSameDate(date1, date2) {
+        if (!date1 || !date2) return false;
+
+        const d1 = new Date(date1);
+        const d2 = new Date(date2);
+
+        return d1.getFullYear() === d2.getFullYear() &&
+               d1.getMonth() === d2.getMonth() &&
+               d1.getDate() === d2.getDate();
+    }
+
+    if (cindate) {
+        if (!isSameDate(indate, cindate)) {
+            e += 'Atten In Date and Correction In Date must be same date.<br>';
+        }
+    }
+
+    if (coutdate) {
+        if (!isSameDate(cindate, coutdate)) {
+             e += 'Atten Out Date and Correction Out Date must be same date.<br>';
+        }
+    }
+
+     if (e == '') {return 0;} 
+  	else {ShowError(e, "lblErr", "Page Validation Error");return 1;}
+}

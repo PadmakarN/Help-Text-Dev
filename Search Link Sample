@@ -1,2 +1,6 @@
 App/indexList.Html?ShiftRoasterHdr/&Search=SearchField.#Fieldname#
 Example = App/indexList.Html?ShiftRoasterHdr/&Search=RName.GS_TUE
+
+function openlog(ID){
+   modalWin(`indexlist.Html?LogDetail/&Search=TableName.Attendance||ID.${ID}`);
+  }

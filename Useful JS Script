@@ -1,0 +1,22 @@
+//===============For Dynamic Id Selection On change With Specific Function =========================================//
+$(document).on('change', '[id^="txtempmomdtltargetdate"]', function () {
+    var id = $(this).attr('id');
+    var index = id.replace('txtempmomdtltargetdate', '');
+    TargateDate(
+        'txtempmomdtltargetdate' + index,
+        'txtempmomdtlrevised' + index
+    );
+});
+
+function TargateDate(T, R) {
+    debugger;
+
+    const target = $('#' + T).val();
+    const r = parseInt($('#' + R).val() || 0);
+
+    if (target) {
+        setTimeout(function () {
+            $('#' + R).val(r + 1);
+        }, 1000);
+    }
+}

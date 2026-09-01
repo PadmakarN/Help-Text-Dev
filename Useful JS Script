@@ -20,3 +20,8 @@ function TargateDate(T, R) {
         }, 1000);
     }
 }
+//================================================= Export To Excel Option ====================================================
+function excelReport(){
+    const id=Number($('.id').val());
+    OpenReport('MomFDM&ExportType=xls',id);
+  }

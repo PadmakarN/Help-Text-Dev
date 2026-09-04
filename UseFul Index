@@ -1,0 +1,4 @@
+//=====index for unique value ==============//
+
+CREATE UNIQUE INDEX UX_FAS_Transaction_Number
+ON FAS_Transaction(Number);

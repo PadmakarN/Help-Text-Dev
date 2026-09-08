@@ -1,3 +1,11 @@
+//===============similer id function with each loop ===============================================================//
+$(document).ready(() => {
+  $('[id^="txtpoitemindentno"]').each(function () {
+    if ($(this).val().includes('!')) {
+      $(this).css('color', 'green');
+    }
+  });
+});
 //===============For Dynamic Id Selection On change With Specific Function =========================================//
 $(document).on('change', '[id^="txtempmomdtltargetdate"]', function () {
     var id = $(this).attr('id');

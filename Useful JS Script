@@ -1,4 +1,4 @@
-//===============similer id function with each loop ===============================================================//
+//===============Dynamic id handling function with each loop ===============================================================//
 $(document).ready(() => {
   $('[id^="txtpoitemindentno"]').each(function () {
     if ($(this).val().includes('!')) {
